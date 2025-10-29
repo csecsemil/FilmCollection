@@ -22,5 +22,22 @@
     <div class="content">
         <p>Ez az második tartalom, ami alapból rehtve van.</p>
     </div>
+
+     <button class="gomb">Második tartalom gomb</button>
+    <div class="content">
+        <p>Ez az második tartalom, ami alapból rehtve van.</p>
+    </div>
+
+
+
+    <script>
+        const buttons = document.querySelectorAll('.gomb');
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
