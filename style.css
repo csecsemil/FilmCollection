@@ -35,11 +35,12 @@ header p {
 }
 
 .content {
+    font-size: 2em;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    padding: 0 18px;
-    background-color: #2a2a2a;
+    transition: 0.3s ease-out;
+    padding: 0 65px;
+    background-color: #7c0404;
     color: #fff;
 }
 
@@ -54,9 +55,11 @@ header p {
     outline: none;
     font-size: 30px;
     transition: 0.2s; 
+    box-shadow: inset;
 }
 
 .content.active {
-    max-height: 200px;
+    max-height: 800px;
     padding: 18px;
 }
+
