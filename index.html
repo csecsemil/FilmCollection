@@ -14,7 +14,12 @@
     </header>
 
     <button class="gomb">Halloween (1978)</button>
-    <div class="content">
+
+    <div id="imageContainer" class="hidden">
+        <img src="oar2.jpg" alt="Megjeleno kep">
+    </div>
+
+    <div class="content"> <img src="halowinee.jpg" alt="Halloween" width="300px">
         <p>Director: John Carpenter</p>
 
     <p>Genre: Horror (Slasher)</p> <br><br>
@@ -22,14 +27,17 @@
     <p>What is it about?</p> A cornerstone of modern horror. 15 years after 6-year-old Michael Myers murdered his older sister, he escapes from the asylum and returns to his hometown of Haddonfield, right on Halloween night. The masked, emotionless killer is hunting the terrified teenager Laurie Strode (Jamie Lee Curtis) and her friends. Their only hope lies with Dr. Sam Loomis, Michael's psychiatrist, who knows the boy is not a man, but the embodiment of pure Evil. 
 
     <p>Why watch it?</p>
-    <p>A masterpiece of tension-building, featuring an iconic musical score and one of the horror genre's most infamous characters.</p> If you are looking for pure, original dread, this is a must-see!</p><img src="halowinee.jpg" alt="Halloween" width="300px">
+    <p>A masterpiece of tension-building, featuring an iconic musical score and one of the horror genre's most infamous characters.</p> If you are looking for pure, original dread, this is a must-see!</p>
     </div>
 
     <button class="gomb">Hocus Pocus (1993)</button>
     <div class="content">
         <p>Director: Kenny Ortega</p>
-        <p>Genre: Stop-Motion Animation, Fantasy, Musical</p>
+
+        <p>Genre: Fantasy, Comedy, Family Film</p>
+
         <p>What is it about?</p>
+
         <p>300 years after Salem's three infamous witches, the Sandearson Sisters, were executed, a modern day teenager named Max accidentally resurects them with a sacred candle flame, all on Halloween.Winifred, Mary and Sarah (Bette Midler, Kathy Najimy, Sarah Jessica Parker) have only one night to secure their immortality forever before sunrise. It's up to Max, his little sister Dani, and a boy turned into a magical cat to stop the hilariously wicked trio.</p> <br>
 
     <p>Why watch it?</p> 
@@ -41,19 +49,22 @@
 
      <button class="gomb">The Nightmare Before Christmas</button>
     <div class="content">
-        <p>Ez az második tartalom, ami alapból rehtve van.</p>
+        <p>Director: Henry Selick</p>
+
+        <p>Genre: Stop-Motion Animation, Fantasy, Musical</p><br>
+
+        <p>What is it about?</p>
+        <p>Our protagonist is Jack Skellington, the Pumpkin King of the spooky realm called Halloweentown. Jack grows tired of organizig the same old Halloween every year and accidentally stumbles upon Christmastown. Fascinated by its wonder and light, he terrifying style of the Halloweentown residents! The result is, of course, a spectacular disaster.</p><br>
+
+        <p>Why watch it?</p>
+        <p>For the stunning, unique visual world created by Tim Burton (story dveloper and producer). A special musical-tale that bridges the two hilidays. Its dark yet charming atmosphere is perfect for the autumn evenings!</p>
+
     </div>
 
 
 
-    <script>
-        const buttons = document.querySelectorAll('.gomb');
-        buttons.forEach((button) => {
-            button.addEventListener('click', () => {
-                const content = button.nextElementSibling;
-                content.classList.toggle('active');
-            });
-        });
+    <script src="script.js">
     </script>
+
 </body>
 </html>

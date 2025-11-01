@@ -6,11 +6,27 @@
 
 body{
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1a1a1a, #2d1810);
-    color: #fff;
+    background-color: #1a0800;
+    background-image: radial-gradient(at 0% 0%, #330000, #000000);
     min-height: 100vh;
     background-attachment: fixed;
 }
+
+.title-font {
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    padding: 0 1.5rem; 
+    background-color: rgba(61, 10, 10, 0.5);/* Darker, themed background for content */
+}
+
+
+
 
 header {
     padding: 2rem 1rem;
@@ -38,10 +54,11 @@ header p {
     font-size: 2em;
     max-height: 0;
     overflow: hidden;
-    transition: 0.3s ease-out;
+    transition: max-height 0.4s ease-out;
     padding: 0 65px;
     background-color: #7c0404;
     color: #fff;
+    border-radius: 0 0 8px 8px;
 }
 
 .gomb {
@@ -59,7 +76,30 @@ header p {
 }
 
 .content.active {
-    max-height: 800px;
+    max-height: 1000px;
     padding: 18px;
 }
 
+#imageContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000000;
+}
+
+.hidden {
+    display: none !important;
+}
+  
+#imageContainer img {
+    max-width: 1000%;
+    max-height: 1000%;
+    border: 5px solid #1a1111;
+    box-shadow: 0 0 20px rgba(214, 34, 34, 0.5);
+}
