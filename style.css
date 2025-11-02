@@ -78,8 +78,8 @@ header p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
-    padding: 0 65px;
-    background-color: #7c0404;
+    padding: 0 15px;
+    background-color: rgba(61, 10, 10, 0.5); /* Darker, themed background for content */    
     border-radius: 0 0 8px 8px; /* Lekerekítés */
     margin-bottom: 15px;
 }
@@ -93,6 +93,32 @@ header p {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 1.1em;
+}
+.movie-details h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffaa66;
+    margin-top: 10px;
+}
+
+.movie-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#imageContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
 }
 
 
@@ -108,33 +134,13 @@ header p {
 
 
 
+
 h1 {
     font-family: "Creepster", system-ui;
     font-size: 8em;
     color: #f10909;
     text-align: center;
     margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-#imageContainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1000000;
 }
 
 .hidden {
