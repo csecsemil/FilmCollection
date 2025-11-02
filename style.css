@@ -74,6 +74,13 @@ header p {
     background-color: #2c2f2f;
 }
 
+.gomb[data-movie-id="TheAddamsFamily"] {
+    background-color: #4b5052;
+}
+.gomb[data-movie-id="TheAddamsFamily"]:hover {
+    background-color: #505245;
+}
+
 .content {
     max-height: 0;
     overflow: hidden;
