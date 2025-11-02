@@ -1,3 +1,4 @@
+
 // Összes gomb megkeresése
 const buttons = document.querySelectorAll('.gomb');
 const imageContainer = document.getElementById('imageContainer');
